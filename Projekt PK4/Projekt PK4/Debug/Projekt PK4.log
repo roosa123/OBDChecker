@@ -1,0 +1,197 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  ParserOBD_CAN.cpp
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(34): warning C4251: 'NativeParser::Parser::RealTimeParameters': class 'std::map<MULTIPLE_READ_DATA,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=MULTIPLE_READ_DATA,
+              _Ty=double
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(34): note: see declaration of 'std::map<MULTIPLE_READ_DATA,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=MULTIPLE_READ_DATA,
+              _Ty=double
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(35): warning C4251: 'NativeParser::Parser::VehicleInformation': class 'std::map<SINGLE_READ_DATA,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=SINGLE_READ_DATA,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(35): note: see declaration of 'std::map<SINGLE_READ_DATA,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=SINGLE_READ_DATA,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): warning C4251: 'NativeParser::Parser::OBDStandards': class 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): note: see declaration of 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(37): warning C4251: 'NativeParser::Parser::FuelType': class 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): note: see declaration of 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(59): warning C4251: 'NativeParser::Parser::ResponseOrError': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(60): warning C4251: 'NativeParser::Parser::MessageOnly': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(85): warning C4251: 'NativeParser::ParserOBD_CAN::ResponseOrError_CAN': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(86): warning C4251: 'NativeParser::ParserOBD_CAN::SentCommands': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(87): warning C4251: 'NativeParser::ParserOBD_CAN::FullMessage': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(97): warning C4251: 'NativeParser::ParserOBD::ResponseOrError_OBD': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parserobd_can.cpp(26): warning C4018: '<': signed/unsigned mismatch
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parserobd_can.cpp(17): warning C4101: 'exc': unreferenced local variable
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parserobd_can.cpp(35): warning C4101: 'exc': unreferenced local variable
+  ParserOBD.cpp
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(34): warning C4251: 'NativeParser::Parser::RealTimeParameters': class 'std::map<MULTIPLE_READ_DATA,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=MULTIPLE_READ_DATA,
+              _Ty=double
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(34): note: see declaration of 'std::map<MULTIPLE_READ_DATA,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=MULTIPLE_READ_DATA,
+              _Ty=double
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(35): warning C4251: 'NativeParser::Parser::VehicleInformation': class 'std::map<SINGLE_READ_DATA,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=SINGLE_READ_DATA,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(35): note: see declaration of 'std::map<SINGLE_READ_DATA,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=SINGLE_READ_DATA,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): warning C4251: 'NativeParser::Parser::OBDStandards': class 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): note: see declaration of 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(37): warning C4251: 'NativeParser::Parser::FuelType': class 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): note: see declaration of 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(59): warning C4251: 'NativeParser::Parser::ResponseOrError': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(60): warning C4251: 'NativeParser::Parser::MessageOnly': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(85): warning C4251: 'NativeParser::ParserOBD_CAN::ResponseOrError_CAN': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(86): warning C4251: 'NativeParser::ParserOBD_CAN::SentCommands': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(87): warning C4251: 'NativeParser::ParserOBD_CAN::FullMessage': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(97): warning C4251: 'NativeParser::ParserOBD::ResponseOrError_OBD': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parserobd.cpp(14): warning C4101: 'exc': unreferenced local variable
+  Parser.cpp
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(34): warning C4251: 'NativeParser::Parser::RealTimeParameters': class 'std::map<MULTIPLE_READ_DATA,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=MULTIPLE_READ_DATA,
+              _Ty=double
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(34): note: see declaration of 'std::map<MULTIPLE_READ_DATA,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=MULTIPLE_READ_DATA,
+              _Ty=double
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(35): warning C4251: 'NativeParser::Parser::VehicleInformation': class 'std::map<SINGLE_READ_DATA,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=SINGLE_READ_DATA,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(35): note: see declaration of 'std::map<SINGLE_READ_DATA,std::string,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=SINGLE_READ_DATA,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): warning C4251: 'NativeParser::Parser::OBDStandards': class 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): note: see declaration of 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(37): warning C4251: 'NativeParser::Parser::FuelType': class 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+  d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(36): note: see declaration of 'std::map<int,std::string,std::less<int>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=int,
+              _Ty=std::string
+          ]
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(59): warning C4251: 'NativeParser::Parser::ResponseOrError': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(60): warning C4251: 'NativeParser::Parser::MessageOnly': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::Parser'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(85): warning C4251: 'NativeParser::ParserOBD_CAN::ResponseOrError_CAN': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(86): warning C4251: 'NativeParser::ParserOBD_CAN::SentCommands': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(87): warning C4251: 'NativeParser::ParserOBD_CAN::FullMessage': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD_CAN'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.h(97): warning C4251: 'NativeParser::ParserOBD::ResponseOrError_OBD': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'NativeParser::ParserOBD'
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.cpp(171): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.cpp(178): warning C4018: '>': signed/unsigned mismatch
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.cpp(200): warning C4267: 'argument': conversion from 'size_t' to 'char', possible loss of data
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.cpp(262): warning C4101: 'exc': unreferenced local variable
+d:\studia\informatyka\programowanie komputerów\sem iv\projekt pk4 diagnostyka dpf\obdchecker\projekt pk4\projekt pk4\parser.cpp(280): warning C4101: 'exc': unreferenced local variable
+  Generating Code...
+     Creating library D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\OBDChecker\Projekt PK4\Debug\Projekt PK4.lib and object D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\OBDChecker\Projekt PK4\Debug\Projekt PK4.exp
+  Projekt PK4.vcxproj -> D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\OBDChecker\Projekt PK4\Debug\Projekt PK4.dll
+  Projekt PK4.vcxproj -> D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\OBDChecker\Projekt PK4\Debug\Projekt PK4.pdb (Full PDB)

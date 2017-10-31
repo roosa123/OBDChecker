@@ -1,0 +1,139 @@
+﻿<Window x:Class="MainProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainProject"
+        mc:Ignorable="d"
+        Title="Sprawdzacz OBD" Height="410" Width="940" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+    <Grid>
+        <Button x:Name="SearchButton" Content="Wyszukaj urządzenie" HorizontalAlignment="Left" Margin="40,40,0,0" VerticalAlignment="Top" Width="150" Height="30" IsDefault="True" IsEnabled="True" Click="SearchButton_Click"/>
+        <Button x:Name="RefreshButton" Content="Odśwież" HorizontalAlignment="Left" Margin="40,110,0,0" VerticalAlignment="Top" Width="150" Height="30" IsDefault="True" IsEnabled="False" Click="RefreshButton_Click"/>
+        <CheckBox x:Name="ConstantReadCheckBox" Content="Odczyt ciągły" HorizontalAlignment="Left" Margin="40,180,0,0" VerticalAlignment="Top" Height="15" IsEnabled="False" Checked="ConstantReadCheckBox_Checked" Unchecked="ConstantReadCheckBox_Unchecked" />
+        <Grid HorizontalAlignment="Left" Height="Auto" Margin="40,230,0,0" VerticalAlignment="Top" Width="230">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="90"/>
+                <ColumnDefinition Width="140"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="ProtocolTextBlock" HorizontalAlignment="Left" Margin="0,5,0,0" TextWrapping="Wrap" Text="Protokół:" VerticalAlignment="Top" Height="20"/>
+            <TextBlock x:Name="StandardTextBlock" Grid.Row="1" HorizontalAlignment="Left" Margin="0,5,0,0" TextWrapping="Wrap" Text="Standard OBD:" VerticalAlignment="Top" Height="20"/>
+            <TextBlock x:Name="FuelTypeTextBlock" Grid.Row="2" HorizontalAlignment="Left" Margin="0,5,0,0" TextWrapping="Wrap" Text="Typ paliwa:" VerticalAlignment="Top" Height="20"/>
+            <TextBlock x:Name="RetrievedProtocolTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" TextWrapping="Wrap" Text="Nieznany" VerticalAlignment="Top"/>
+            <TextBlock x:Name="RetrievedStandardTextBlock" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="0,5,0,0" TextWrapping="Wrap" Text="Nieznany" VerticalAlignment="Top"/>
+            <TextBlock x:Name="RetrievedFuelTypeTextBlock" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="0,5,0,0" TextWrapping="Wrap" Text="Nieznany" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="300" Margin="300,40,0,0" VerticalAlignment="Top" Width="600">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <GroupBox x:Name="SpeedGroupBox" Header="Prędkość" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90">
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="SpeedLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="SpeedUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="km/h" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="EngineLoadGroupBox" Header="Obciążenie silnika" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90" Grid.Column="1">
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="EngineLoadLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="EngineLoadUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="CoolantTemperatureGroupBox" Header="Temperatura chłodziwa" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90" Grid.Column="2">
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="CoolantTemperatureLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="CoolantTemperatureUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="°C" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="EngineOilTemperatureGroupBox" Header="Temperatura oleju silnikowego" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90" Grid.Row="1">
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="EngineOilTemperatureLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="EngineOilTeperatureUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="°C" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="FuelPressureGroupBox" Header="Ciśnienie paliwa" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90" Grid.Column="1" Grid.Row="1">
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="FuelPressureLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="FuelPressureUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="kPa" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="IntakeManifoldAbsolutePressureGroupBox" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90" Grid.Column="2" Grid.Row="1">
+                <GroupBox.Header>
+                    <TextBlock Text="Ciśnienie w kolektorze dolotowym" Width="120" TextWrapping="Wrap"/>
+                </GroupBox.Header>
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="IntakeManifoldAbsolutePressureLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="IntakeManifoldAbsolutePressureUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="kPa" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="IntakeAirTemperatureGroupBox" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90" Grid.Column="2" Grid.Row="2">
+                <GroupBox.Header>
+                    <TextBlock Text="Temperatura powietrza wlotowego" Width="130" TextWrapping="Wrap"/>
+                </GroupBox.Header>
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="IntakeAirTemperatureLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="IntakeAirTemperatureUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="°C" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="ThrottlePositionGroupBox" Header="Pozycja przepustnicy" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90" Grid.Row="2">
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="ThrottlePositionLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="ThrottlePositionUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox x:Name="RealtiveAcceleratorPedalPositionGroupBox" Header="Względna pozycja pedału gazu" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" Width="190" Height="90" Grid.Column="1" Grid.Row="2">
+                <Grid HorizontalAlignment="Left" Height="50" Margin="10,10,0,0" VerticalAlignment="Top" Width="160">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="RelativeAcceleratorPedalPositionLabel" Content="0.0" HorizontalAlignment="Left" Margin="5,5,0,0" VerticalAlignment="Top" FontSize="20" Height="37" Width="70"/>
+                    <TextBlock x:Name="RealtiveAcceleratorPedalPositionUnitTextBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="5,20,0,0" TextWrapping="Wrap" Text="%" VerticalAlignment="Top" Height="16" Width="28"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Window>

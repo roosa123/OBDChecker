@@ -1,0 +1,6 @@
+D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\Projekt PK4\BTHLibrary\bin\Release\BTHLibrary.dll
+D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\Projekt PK4\BTHLibrary\bin\Release\BTHLibrary.pdb
+D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\Projekt PK4\BTHLibrary\bin\Release\InTheHand.Net.Personal.dll
+D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\Projekt PK4\BTHLibrary\bin\Release\InTheHand.Net.Personal.xml
+D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\Projekt PK4\BTHLibrary\obj\Release\BTHLibrary.dll
+D:\studia\Informatyka\programowanie komputerów\sem IV\projekt PK4 diagnostyka DPF\Projekt PK4\BTHLibrary\obj\Release\BTHLibrary.pdb

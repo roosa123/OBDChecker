@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ChiefController" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAkAIQhgAAAAACQEQAAAASAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ChiefController.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Parser" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAgAIAAAAEAQBAACwAIBAQAchAAAAAJGgIAAiCAAAA=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParserOBD" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>ParserOBD.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ParserOBD_CAN" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAABAAAABAAAAgAAACAAAAEAAA=</HashCode>
+      <FileName>ParserOBD_CAN.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="COMMAND_GROUP" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>ChiefController.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="COMMAND" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQQAIAAAAAAAAAAAQAAkEQAAIEBAAAQIIAQEgAAAgA=</HashCode>
+      <FileName>ChiefController.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MULTIPLE_READ_DATA" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBACAAApAAIAAAAAQAAAAQBAEEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SINGLE_READ_DATA" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAQAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parser.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,57 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly ParserBridge, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ParserBridge.ParserManaged: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    RetrieveRealTimeParameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RetrieveVehicleInformation(): PrivateScope, Public, HideBySig
+    SetResponseOrError(String): PrivateScope, Public, HideBySig
+    GetReponseOrError(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    GetInterpretedRealTimeParameters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetInterpretedVehicleInformation(): PrivateScope, Public, HideBySig
+    SetInterpretedRealTimeInformation(map<enum MULTIPLE_READ_DATA\,double\,std::less<enum MULTIPLE_READ_DATA>\,std::allocator<std::pair<enum MULTIPLE_READ_DATA const \,double> > >*): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class ParserBridge.ParserOBD_Managed: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ParserBridge.ParserManaged
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    RetrieveRealTimeParameters(): PrivateScope, Public, Virtual, HideBySig
+    GetInterpretedRealTimeParameters(): PrivateScope, Public, Virtual, HideBySig
+Class ParserBridge.ParserOBD_CAN_Managed: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :ParserBridge.ParserManaged
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    RetrieveRealTimeParameters(): PrivateScope, Public, Virtual, HideBySig
+    GetInterpretedRealTimeParameters(): PrivateScope, Public, Virtual, HideBySig
+    RetrieveSentCommands(): PrivateScope, Public, HideBySig
+Struct ParserBridge.MultipleReadData: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ParserBridge.MultipleReadData VehicleSpeed = 13 : Public, Static, Literal, HasDefault
+    ParserBridge.MultipleReadData EngineLoad = 4 : Public, Static, Literal, HasDefault
+    ParserBridge.MultipleReadData EngineCoolantTemperature = 5 : Public, Static, Literal, HasDefault
+    ParserBridge.MultipleReadData EngineOilTemperature = 92 : Public, Static, Literal, HasDefault
+    ParserBridge.MultipleReadData FuelPressure = 10 : Public, Static, Literal, HasDefault
+    ParserBridge.MultipleReadData IntakeManifoldAbsolutePressure = 11 : Public, Static, Literal, HasDefault
+    ParserBridge.MultipleReadData IntakeAirTemperature = 15 : Public, Static, Literal, HasDefault
+    ParserBridge.MultipleReadData ThrottlePosition = 17 : Public, Static, Literal, HasDefault
+    ParserBridge.MultipleReadData RelativeAcceleratorPedalPosition = 90 : Public, Static, Literal, HasDefault
+Struct ParserBridge.SingleReadData: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ParserBridge.SingleReadData Protocol = 0 : Public, Static, Literal, HasDefault
+    ParserBridge.SingleReadData OBDStandard = 28 : Public, Static, Literal, HasDefault
+    ParserBridge.SingleReadData FuelType = 81 : Public, Static, Literal, HasDefault

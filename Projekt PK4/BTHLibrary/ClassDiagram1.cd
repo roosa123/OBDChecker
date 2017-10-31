@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BTHLibrary.BTH_ELMClient" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>BTH_ELMClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTHLibrary.BTH_ELMCommandBuffer" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABBAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BTH_ELMCommandBuffer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTHLibrary.BTH_Semaphores" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAIEAIAAAAAAAAAAAAAgAEAAAA=</HashCode>
+      <FileName>BTH_Semaphores.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTHLibrary.BTHClient" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAAAAAAAAAAAAABAAEAAAAAAAAAgAAAAAAAgAgAAAAA=</HashCode>
+      <FileName>BTHClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTHLibrary.BTHException" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BTHException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTHLibrary.BTHSocket" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIIAAAAAAAAAAAAQAAAAAAAAAAACQAABAAA=</HashCode>
+      <FileName>BTHSocket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BTHLibrary.ELMCommandManager" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAAAAAAAAAAAAAAAAAAAQACAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>ELMCommandManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
